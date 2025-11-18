@@ -1,16 +1,16 @@
 .container {
     display: flex;
-    flex-direction: column;
+     flex-direction: column;
     align-items: center;
     gap: 12px;
     padding: 12px;
     min-height: 100vh;
-    background: linear-gradient(#091226, #0d1b2a);
-    color: #fff;
+    background: linear-gradient(#244488, #0d1b2a);
+    color: #fff; 
 }
 
 /* Game grid */
-.play-board {
+ .play-board {
     width: min(90vmin, 600px);
     aspect-ratio: 1 / 1;
     background: #071020;
@@ -20,11 +20,11 @@
     border-radius: 12px;
     position: relative;
     overflow: hidden;
-}
+} 
 
 /* Food cell */
 .food {
-    background: #7cffb2;
+    background: #bbff7c;
     border-radius: 4px;
     box-shadow: 0 0 6px rgba(255, 77, 77, 0.6);
 }
@@ -37,25 +37,27 @@
 }
 
 /* Controls  */
- .controls {
+  .controls {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     user-select: none;
-}
+} 
 
-.controls i {
+
+
+ .controls i {
     padding: 12px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     cursor: pointer;
     font-size: 20px;
-}
+} 
 
 
 @media (min-width: 600px) {
     .controls {
         display: none;
     }
-}
+} 
