@@ -10,7 +10,7 @@ let snakeBody = [];
 let velX = 0, velY = 0;
 let setIntervalId;let score = 0;
 
-// Load high score
+
 let highscore = localStorage.getItem("high-score") || 0;
 highscoreElement.innerHTML = `High Score : ${highscore}`;
 
@@ -23,7 +23,6 @@ const changeFoodPosition = () => {
 
 const handleGameOver = () => {
     clearInterval(setIntervalId);
-    alert("Game over! Press OK to replay...");
     location.reload();
 };
 
